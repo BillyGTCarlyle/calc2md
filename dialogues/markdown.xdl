@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="markdown" dlg:left="272" dlg:top="129" dlg:width="265" dlg:height="124" dlg:closeable="true" dlg:moveable="true">
+ <dlg:styles>
+  <dlg:style dlg:style-id="0" dlg:font-name="Noto Sans Mono" dlg:font-stylename="Regular" dlg:font-family="swiss"/>
+ </dlg:styles>
+ <dlg:bulletinboard>
+  <dlg:textfield dlg:style-id="0" dlg:id="MarkdownOutput" dlg:tab-index="0" dlg:left="5" dlg:top="5" dlg:width="255" dlg:height="97" dlg:hide-inactive-selection="false" dlg:valign="top" dlg:multiline="true" dlg:readonly="true"/>
+  <dlg:button dlg:id="CloseButton" dlg:tab-index="1" dlg:left="223" dlg:top="110" dlg:width="37" dlg:height="10" dlg:value="Close" dlg:button-type="ok"/>
+ </dlg:bulletinboard>
+</dlg:window>
