@@ -15,13 +15,18 @@ def toMarkdown():
     text = dlg.getControl("MarkdownOutput")
     dataString = ""
     if header:
+        chars = []
         dataString += "| "
         for column in data[0]:
             dataString += str(column)
+            chars.append(len(str(column)))
             dataString += " | "
         dataString += '\n'
         for i in range(0,len(data[0])):
-            dataString += "| --- "
+            dataString += "| "
+            for i in range(0,chars[i]):
+                dataString += "-"
+            dataString += " "
             
         dataString += "|\n"
         data = data[1:]
