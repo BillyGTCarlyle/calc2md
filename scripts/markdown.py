@@ -1,4 +1,5 @@
 import uno
+import os
 import msgbox
 
 document = XSCRIPTCONTEXT.getDocument()
@@ -11,7 +12,8 @@ def toMarkdown():
     active_sheet = controller.ActiveSheet
     selection = controller.getSelection()
     data = selection.getDataArray()
-    dlg = dp.createDialog("vnd.sun.star.script:calc2md.markdown?location=application")
+    dlg_file = uno.systemPathToFileUrl(os.path.join(os.environ['HOME'], '.config', 'libreoffice', '4', 'user', 'dialogs', 'calc2md', 'markdown.xdl'))
+    dlg = dp.createDialog(dlg_file)
     text = dlg.getControl("MarkdownOutput")
     dataString = ""
     if header:
